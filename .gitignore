@@ -1,5 +1,53 @@
-# Object file
-*.o
+# Environment Variables
+.env
+.env.*
+!.env.example
 
-# Ada Library Information
-*.ali
+# Secrets
+*.pem
+*.key
+secrets/
+credentials/
+
+# Logs
+*.log
+logs/
+
+# Temporary Files
+tmp/
+temp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Ansible
+*.retry
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node.js
+node_modules/
+
+# .NET
+bin/
+obj/
+
+# Backup
+*.bak
+*.backup
+*.old
