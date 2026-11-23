@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'development',
+                git branch: 'Development',
                     credentialsId: 'github-pat',
                     url: 'https://github.com/hanifroykhan/devops-engineering-portfolio.git'
             }
