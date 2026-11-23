@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'development',
+                    credentialsId: 'github-pat',
+                    url: 'https://github.com/hanifroykhan/devops-engineering-portfolio.git'
+            }
+        }
+
+        stage('Verify Repository') {
+            steps {
+                sh '''
+                    echo "Repository successfully cloned"
+                    pwd
+                    ls -la
+                '''
+            }
+        }
+    }
+}
